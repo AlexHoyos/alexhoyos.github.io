@@ -52,15 +52,15 @@
         
             <div id="about">
                 <div class="aboutme">
-                    <h2>ABOUT ME</h2>
-                    <p>
+                    <h2 id="about_title">ABOUT ME</h2>
+                    <p id="about_description">
                         Mi nombre completo es Alexandro Hoyos Félix soy originario de Sonora, México. 
                         Desde hace unos años me he apasionado por el mundo del desarrollo web, iniciando con pequeños proyectos en PHP. 
                         Actualmente soy estudiante de la carrera de Ing. Sistemas en la Universidad Autónoma de Nuevo León. 
                         A través de este tiempo he adquirido conocimientos y experiencia para poder brindar soluciones utilizando las mejores tecnologías 
                         con buenas practicas y arquitecturas que se adapten al proyecto.
                     </p>
-                    <button class="dark-btn">
+                    <button class="dark-btn" id="about_projects">
                         MY PROJECTS
                     </button>
                 </div>
@@ -78,7 +78,7 @@
                         <div class="progress" style="width: 65%;">65%</div>
                         <h5>> HTML_</h5>
                         <div class="progress" style="width: 85%;">85%</div>
-                        <h2>TECHNOLOGIES</h2>
+                        <h2 id="about_tech">TECHNOLOGIES</h2>
                         <div class="technologies">
                             <div class="tech" style="background-image: url('assets/imgs/technologies/icons8-laravel-96.png')"></div>
                             <div class="tech" style="background-image: url('assets/imgs/technologies/icons8-nodejs-256.png')"></div>
@@ -94,7 +94,32 @@
             </div>
 
             <div id="projects">
-                projects
+                
+                <h2 id="projects_title">MY PROJECTS</h2>
+                <div class="projects-grid">
+
+                    <div class="project-box" id="project-1">
+
+                        <div class="logo" style="background-image: url('./assets/imgs/projects/coderbook.png');"></div>
+                        <h4 class="title">Coderbook</h4>
+                        <p class="description">
+                            Pequeño clon de Facebook. Cuenta con su RestAPI y servidor de WebSockets.
+                        </p>
+                        <a href="#" class="link-btn">Go to project <i class="fas fa-arrow-right"></i> </a>
+
+                    </div>
+                    <div class="project-box" id="project-2"></div>
+                    <div class="project-box" id="project-3"></div>
+                    <div class="project-box" id="project-4"></div>
+                    <div class="project-box" id="project-5"></div>
+                    <div class="project-box" id="project-6"></div>
+                    
+
+                </div>
+                <div class="github">
+                    <a href="#" class="link-btn" id="projects_github">See Github repositories</a>
+                </div>
+
             </div>
         
             <div id="contact">

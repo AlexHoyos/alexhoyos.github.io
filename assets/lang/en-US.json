@@ -1,10 +1,28 @@
 {
 
     "home": {
-
         "description": "> Back-end developer focused on create the best web solutions throught modern technologies.",
         "download": "DOWNLOAD CV"
-
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "description": "Hi! I'm Alexandro Hoyos from Sonora, Mexico. Some years ago i discover the web developing world, i started with little PHP projects. Actually i study Systems engineer at UANL. Throught this time i have created experience for develop solutions with the best technologies, good practices and architecture for projects.",
+        "projects": "My projects",
+        "languages": "LANGUAGES",
+        "tech": "TECHNOLOGIES"
+    },
+    "projects": {
+        "title": "My projects",
+        "github": "See Github repositories",
+        "projects": [
+            {
+                "img": "coderbook.png",
+                "title": "Coderbook",
+                "description": "Facebook clon. Has his own RestAPI and WebSockets server",
+                "url": "#"
+            }
+        ],
+        "goto": "Go to project"
     }
 
 }

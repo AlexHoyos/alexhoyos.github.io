@@ -63,6 +63,13 @@ function loadLang(lang = "en-US"){
         // HOME
         $("#home_description").text(res.home.description)
         $("#home_download").text(res.home.download)
+        // ABOUT
+        $("#about_title").text(res.about.title)
+        $("#about_description").text(res.about.description)
+        $("#about_projects").text(res.about.projects)
+        // PROJECTS
+        $("#projects_title").text(res.projects.title)
+        $("#projects_github").text(res.projects.github)
         
     })
 

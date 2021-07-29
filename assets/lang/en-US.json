@@ -12,7 +12,7 @@
         "tech": "TECHNOLOGIES"
     },
     "projects": {
-        "title": "My projects",
+        "title": "MY PROJECTS",
         "github": "See Github repositories",
         "projects": [
             {
@@ -23,6 +23,17 @@
             }
         ],
         "goto": "Go to project"
+    },
+    "contact": {
+        "title": "CONTACT ME",
+        "form": {
+            "title": "> Do you want to set up a meeting?_",
+            "first_name": "> First name_",
+            "last_name": "> Last name_",
+            "email": "> Email_",
+            "message": "> Message_",
+            "submit": "Send message"
+        }
     }
 
 }

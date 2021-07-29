@@ -11,4 +11,10 @@
     /* FONTS */
     --principal-font: 'Oswald', sans-serif;
 
+    /* FONT SIZES */
+    --supertitle-size: 72px;
+    --title-size: 48px;
+    --subtitle-size: 32px;
+    --topic-size: 24px;
+    --parag-size: 18px;
 }

@@ -1,265 +1,94 @@
+* {
+    font-family: var(--principal-font);
+}
+
 body {
-    background-color: var(--light-color);
-    font-family: var(--principal-font);
-    padding: 0;
-    margin: 0;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-.principal > .nav {
-    top: 0;
-    position: sticky;
-    width: 100%;
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 1fr 9fr;
-    text-align: center;
-}
-
-.nav > .menu {
-    margin-top: 30vh;
-}
-
-.active {
-    color: var(--dark-blue-color) !important;
-    opacity: 1 !important;
-}
-
-.menu > .menu_btn {
-    margin-top: .8em;
-    width: 100%;
-    background: none;
-    border: 0;
-    color: var(--dark-color);
-    opacity: .3;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.menu > .menu_btn:hover {
-    color: var(--dark-blue-color);
-    transition: .3s;
+    background-color: var(--light-color) !important;
+    overflow: hidden;
 }
 
 
-.principal {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-}
+.logo {
 
-
-.portfolio > div {
-    height: 100vh;
-}
-
-#home {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-#home > .info {
-
-    align-self: center;
-    text-align: center;
-    padding: 0%;
-    line-height: 20px;
-
-}
-
-#home > .info > h1 {
-    font-size: 72px;
-}
-
-#home > .info > p {
-    margin: 0 auto 0 auto;
-    max-width: 330px;
-    font-size: 16px;
-    text-align: justify;
-}
-
-#home > .info > button {
-    margin-top: 2em;
-}
-
-.dark-btn {
-
-    border: 0;
-    padding: 1em 2em 1em 2em;
-    text-align: center;
-    background: var(--dark-color);
-    color: var(--light-color);
-    font-family: var(--principal-font);
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-.prof_img {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.prof_img > .img {
-    height: 60vh;
-    width: 60vh;
-    border: 4px solid var(--dark-blue-color);
-    border-radius: 100%;
-    background-color:var(--light-blue-color);
-    background-image: url('../imgs/alex.png');
-    background-repeat: no-repeat;
+    background-image: url('../imgs/logo.svg');
     background-position: center;
-    background-size: cover;
-    background-position-y: 11vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+
 }
 
-#about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* BACKGROUNDS */
+.bg-dark {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+.bg-light {
+    background-color: var(--light-color) !important;
+    color: var(--dark-color) !important;
+}
+.bg-white {
+    background-color: #fff;
+}
+/* FONT STYLES */
+.fs-supertitle {
+    font-size: var(--supertitle-size);
+    font-weight: bolder;
+}
+.fs-title {
+    font-size: var(--title-size);
+    font-weight: bold;
+}
+.fs-subtitle {
+    font-size: var(--subtitle-size);
+}
+.fs-parag {
+    font-size: var(--parag-size);
 }
 
-#about > .aboutme {
-    align-self: center;
-    text-align: center;
-    padding-right: 3em;
-}
-.aboutme > h2 {
-    text-align: center;
-    font-size: 48px;
-}
-.aboutme > p {
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 3em;
-}
-
-#about > .languages {
-    background: var(--dark-color);
+/* BUTTONS */
+.btn-dark {
+    border: 0;
+    background-color: var(--dark-color);
     color: var(--light-color);
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    padding-left: 4em;
-    grid-template-columns: 1fr;
+    padding: .8em;
+    outline: none !important;
+    text-transform: uppercase;
+}
+.btn-dark:hover {
+    opacity: .7;
+    transition: .2s;
 }
 
-.lang_list {
-    width: 80%;
+.btn-light {
+    border: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: .8em;
+    outline: none !important;
+    text-transform: uppercase;
+}
+.btn-light:hover {
+    opacity: .7;
+    transition: .2s;
 }
 
-.lang_list > h2 {
-    line-height: 30px;
-    font-size: 24px;
-    margin:0;
-    margin-top: .3em;
-}
-.lang_list > h5 {
-    line-height: 45px;
-    font-size: 15px;
-    margin:0;
-}
-
-.lang_list > .progress {
-    position: static;
-    padding: 2px;
-    width: 100%;
-    text-align: end;
-    background-color: var(--dark-blue-color);
-    font-size: 12px;
+.myself {
+    background: url('../imgs/alex.png') var(--light-blue-color);
+    background-position: center;
+    background-position-y: 11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
 }
 
-.lang_list > .technologies {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    justify-content: center;
-}
-
-.technologies > .tech {
-    width: 80px;
+.project-logo {
     height: 80px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-#projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
-    justify-content: center;
-}
-
-#projects > .github {
-    text-align: center;
-}
-
-#projects > h2 {
-    text-align: center;
-    font-size: 48px;
-    margin: 0;
-}
-
-#projects > .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 2em;
-    column-gap: 2em;
-    padding: 4em;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.projects-grid > div {
-    background: #fff;
-    
-}
-
-.link-btn {
-    text-decoration: none;
-    color: var(--dark-blue-color);
-}
-
-.link-btn:hover {
-    color: var(--light-blue-color);
-    transition: .3s;
-}
-
-.link-btn:visited {
-    text-decoration: none;
-    color: var(--dark-blue-color);
-}
-
-.project-box {
-    display: grid;
-    align-items: end;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    padding: .6em;
-}
-
-.project-box > .logo {
-    width: 100%;
-    height: 40%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.project-box > .title {
-    margin: 0;
-}
-
-.project-box > .description {
-    margin: 0;
-}
-
-.project-box > .link-btn {
-    float:right;
+    margin: 1em;
 }
